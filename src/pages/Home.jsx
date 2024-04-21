@@ -23,7 +23,7 @@ const Home = ({ createPostPopup, handleCreatePostPopup }) => {
     });
     const data = await resposne.json();
     console.log(data);
-    alert(`Post ${pid} is deleted successfully`);
+    // alert(`Post ${pid} is deleted successfully`);
     const updatedPosts = posts.filter((post) => post.id !== pid);
     setPosts(updatedPosts);
   };
